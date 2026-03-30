@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Kantanka Rentals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo"><div class="logo-icon">&#9881;</div>Kantanka Rentals</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="vehicles.html">Vehicles</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="page-header">
+    <h1>Contact Kantanka Rentals</h1>
+    <p>Have a question or need help? Reach out to us anytime.</p>
+    <div class="page-header-line"></div>
+  </div>
+
+  <section class="section">
+    <div class="two-col">
+
+      <!-- LEFT: Contact Form -->
+      <div>
+        <h2 style="font-size:18pt; font-weight:bold; margin-bottom:24px; color:var(--near-black);">Get in Touch</h2>
+        <div class="form-group"><label for="c-name">Full Name</label><input type="text" id="c-name" placeholder="Enter your full name"></div>
+        <div class="form-group"><label for="c-email">Email Address</label><input type="email" id="c-email" placeholder="Enter your email"></div>
+        <div class="form-group"><label for="c-subject">Subject</label><input type="text" id="c-subject" placeholder="What is this about?"></div>
+        <div class="form-group"><label for="c-message">Message</label><textarea id="c-message" placeholder="Enter your message here..."></textarea></div>
+        <button id="contact-btn" class="btn btn-red" style="width:100%;">Send Message</button>
+      </div>
+
+      <!-- RIGHT: Real Map  Info -->
+      <div>
+        <h2 style="font-size:18pt; font-weight:bold; margin-bottom:24px; color:var(--near-black);">Location</h2>
+
+        <!-- Real Google Maps embed — KNUST Campus -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7924.038237498498!2d-1.5685636!3d6.6745572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb9410e03b2c51%3A0x2a6b1eb56a4e6a7e!2sKwame%20Nkrumah%20University%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sgh!4v1709000000000!5m2!1sen!2sgh"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <div class="office-info">
+          <h3>Office Information</h3>
+          <div class="office-row">
+            <div class="icon">&#128205;</div>
+            <div><strong>Address</strong><br>KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY<br> Kumasi, Ghana</div>
+          </div>
+          <div class="office-row">
+            <div class="icon">&#128222;</div>
+            <div><strong>Phone</strong><br><a href="tel:+233 508790830">+233 508709830</a></div>
+          </div>
+          <div class="office-row">
+            <div class="icon">&#9993;</div>
+            <div><strong>Email</strong><br><a href="mailto:info@kantankarentals.com">info@kantankarentals.com</a></div>
+          </div>
+          <div class="office-row">
+            <div class="icon">&#9200;</div>
+            <div><strong>Operating Hours</strong><br>Mon – Fri: 7:00 AM – 8:00 PM<br>Sat – Sun: 9:00 AM – 5:00 PM</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div id="contact-modal" class="modal-overlay">
+    <div class="modal">
+      <div class="check-circle">&#10003;</div>
+      <h2>Message Sent!</h2>
+      <p>Thank you for reaching out to Kantanka Rentals! We have received your message and will get back to you within 24 hours. We appreciate your interest.</p>
+      <button onclick="closeModal('contact-modal')" class="btn btn-red">Close</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col"><div class="footer-brand"><span>Kantanka</span> Rentals</div><p>Affordable and convenient campus car rental for students and staff at KNUST.</p><div class="footer-socials"><a href="#">f</a><a href="#">X</a><a href="#">in</a><a href="#">ig</a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="vehicles.html">Vehicles</a><a href="booking.html">Booking</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Contact Info</h4><p>&#128205; KNUST, KUMASI GHANA</p><p>&#128222; <a href="tel:+233 508790830" style="color:#bbb;">+233 508790830</a></p><p>&#9993; <a href="mailto:info@kantankarentals.com" style="color:#bbb;">info@kantankarentals.com</a></p></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Kantanka Rentals. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

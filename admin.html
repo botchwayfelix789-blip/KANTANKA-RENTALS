@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard — Kantanka Rentals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo"><div class="logo-icon">&#9881;</div>Kantanka Rentals</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="vehicles.html">Vehicles</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="page-header">
+    <h1>Developer Dashboard</h1>
+    <p>View all bookings and contact form submissions. (This page is for developers only.)</p>
+    <div class="page-header-line"></div>
+  </div>
+
+  <!-- BOOKINGS -->
+  <div class="admin-section">
+    <h2>&#128203; Booking Submissions</h2>
+    <div class="admin-actions">
+      <button id="clear-bookings" class="btn btn-outline" style="padding:10px 20px; font-size:10pt;">Clear All Bookings</button>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Car</th>
+            <th>Period</th>
+            <th>Days</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="bookings-table-body">
+          <tr><td colspan="8" class="empty-state">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- MESSAGES -->
+  <div class="admin-section">
+    <h2>&#128172; Contact Messages</h2>
+    <div class="admin-actions">
+      <button id="clear-messages" class="btn btn-outline" style="padding:10px 20px; font-size:10pt;">Clear All Messages</button>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        <tbody id="messages-table-body">
+          <tr><td colspan="5" class="empty-state">Loading...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="footer" style="margin-top: 40px;">
+    <div class="footer-bottom">&copy; 2026 Kantanka Rentals — Developer Dashboard</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

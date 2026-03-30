@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking — Kantanka Rentals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo"><div class="logo-icon">&#9881;</div>Kantanka Rentals</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="vehicles.html">Vehicles</a></li>
+      <li><a href="booking.html" class="active">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <div class="page-header">
+    <h1>Complete Your Booking</h1>
+    <p>Fill in your details below to reserve a vehicle from our fleet.</p>
+    <div class="page-header-line"></div>
+  </div>
+
+  <section class="section">
+    <div class="two-col">
+      <div>
+        <div class="form-group"><label for="fullname">Full Name</label><input type="text" id="fullname" placeholder="Enter your full name"></div>
+        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="Enter your email"></div>
+        <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" placeholder="e.g. +233 XX XXX XXXX"></div>
+        <div class="form-group">
+          <label for="vehicle">Select Vehicle</label>
+          <select id="vehicle">
+            <option value="" disabled selected>-- Choose a vehicle --</option>
+            <optgroup label="Kantanka (Made in Ghana)">
+              <option value="kantanka-onantefo">Kantanka Onantefo — GH₵ 220/day</option>
+              <option value="kantanka-k71">Kantanka K71 — GH₵ 150/day</option>
+              <option value="kantanka-amoanimaa">Kantanka Amoanimaa — GH₵ 95/day</option>
+              <option value="kantanka-omama">Kantanka Omama — GH₵ 280/day</option>
+              <option value="kantanka-mensah-ev">Kantanka Mensah EV — GH₵ 200/day</option>
+              <option value="kantanka-omama-pickup">Kantanka Omama Pickup — GH₵ 250/day</option>
+            </optgroup>
+            <optgroup label="International Brands">
+              <option value="toyota-corolla">Toyota Corolla — GH₵ 130/day</option>
+              <option value="toyota-rav4">Toyota RAV4 — GH₵ 180/day</option>
+              <option value="mercedes-c-class">Mercedes-Benz C-Class — GH₵ 350/day</option>
+              <option value="bmw-3-series">BMW 3 Series — GH₵ 320/day</option>
+              <option value="honda-cr-v">Honda CR-V — GH₵ 170/day</option>
+              <option value="hyundai-tucson">Hyundai Tucson — GH₵ 160/day</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="date-row">
+          <div class="form-group"><label for="pickup">Pickup Date</label><input type="date" id="pickup"></div>
+          <div class="form-group"><label for="return">Return Date</label><input type="date" id="return"></div>
+        </div>
+        <button id="booking-btn" class="btn btn-red" style="width:100%; margin-top:12px;">Confirm Booking</button>
+      </div>
+
+      <div class="summary-panel">
+        <h2>Booking Summary</h2>
+        <div class="summary-img">
+          <img id="summary-img" src="" alt="Selected vehicle" style="display:none;">
+          <div id="img-placeholder" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;color:#999;font-size:10pt;">Select a vehicle to preview</div>
+        </div>
+        <div class="summary-row"><span>Car:</span><span id="summary-car">Select a vehicle</span></div>
+        <div class="summary-row"><span>Daily Rate:</span><span id="summary-rate">GH&#8373; —</span></div>
+        <div class="summary-row"><span>Rental Period:</span><span id="summary-period">— days</span></div>
+        <div class="summary-row"><span>Total Cost:</span><span id="summary-total">GH&#8373; —</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div id="booking-modal" class="modal-overlay">
+    <div class="modal">
+      <div class="check-circle">&#10003;</div>
+      <h2>Booking Confirmed!</h2>
+      <p>Thank you for choosing Kantanka Rentals! Your reservation has been received. We will contact you shortly to confirm the details. Drive safe!</p>
+      <a href="index.html" class="btn btn-red">Back to Home</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col"><div class="footer-brand"><span>Kantanka</span> Rentals</div><p>Affordable and convenient campus car rental for students and staff at KNUST.</p><div class="footer-socials"><a href="#">f</a><a href="#">X</a><a href="#">in</a><a href="#">ig</a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About Us</a><a href="vehicles.html">Vehicles</a><a href="booking.html">Booking</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Contact Info</h4><p>&#128205; KNUST,KUMASI GHANA</p><p>&#128222; <a href="tel:+233 508790830" style="color:#bbb;">+233 508790830</a></p><p>&#9993; <a href="mailto:info@kantankarentals.com" style="color:#bbb;">info@kantankarentals.com</a></p></div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 Kantanka Rentals. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
