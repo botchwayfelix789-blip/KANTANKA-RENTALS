@@ -1,18 +1,18 @@
 /* KANTANKA RENTALS — Main Script*/
 
 var vehicles = {
-  "kantanka-onantefo":     { name: "Kantanka Onantefo",       price: 220, img: "images/ONATEFO.jpeg" },
-  "kantanka-k71":          { name: "Kantanka K71",            price: 150, img: "images/K71.jpeg" },
-  "kantanka-amoanimaa":    { name: "Kantanka Amoanimaa",      price: 95,  img: "images/AMOANIMAA.jpeg" },
+  "kantanka-onantefo":     { name: "Kantanka Onantefo",       price: 350, img: "images/ONATEFO.jpeg" },
+  "kantanka-k71":          { name: "Kantanka K71",            price: 360, img: "images/K71.jpeg" },
+  "kantanka-amoanimaa":    { name: "Kantanka Amoanimaa",      price: 220,  img: "images/AMOANIMAA.jpeg" },
   "kantanka-omama":        { name: "Kantanka Omama",          price: 280, img: "images/OMAMA.jpeg" },
   "kantanka-mensah-ev":    { name: "Kantanka Mensah EV",      price: 200, img: "images/MENSAH.jpeg" },
   "kantanka-omama-pickup": { name: "Kantanka Omama Pickup",   price: 250, img: "images/OMAMA PICKUP.jpeg" },
-  "toyota-corolla":        { name: "Toyota Corolla",          price: 130, img: "images/CORROLA.jpg" },
-  "toyota-rav4":           { name: "Toyota RAV4",             price: 180, img: "images/RAV4.jpeg" },
-  "mercedes-c-class":      { name: "Mercedes-Benz C-Class",   price: 350, img: "images/BENZ.jpg" },
-  "bmw-3-series":          { name: "BMW 3 Series",            price: 320, img: "images/BMW.jpg" },
-  "honda-cr-v":            { name: "Honda CR-V",              price: 170, img: "images/CRV.jpeg" },
-  "hyundai-tucson":        { name: "Hyundai Tucson",          price: 160, img: "images/HYUNDAI.jpg" }
+  "toyota-corolla":        { name: "Toyota Corolla",          price: 430, img: "images/CORROLA.jpg" },
+  "toyota-rav4":           { name: "Toyota RAV4",             price: 380, img: "images/RAV4.jpeg" },
+  "mercedes-c-class":      { name: "Mercedes-Benz C-Class",   price: 450, img: "images/BENZ.jpg" },
+  "bmw-3-series":          { name: "BMW 3 Series",            price: 500, img: "images/BMW.jpg" },
+  "honda-cr-v":            { name: "Honda CR-V",              price: 450, img: "images/CRV.jpeg" },
+  "hyundai-tucson":        { name: "Hyundai Tucson",          price: 400, img: "images/HYUNDAI.jpg" }
 };
 
 
